@@ -1,0 +1,28 @@
+name: Bug report
+description: Report reproducible normalization or validation behavior.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include real IMEI values, customer data, or confidential prices.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Anonymized sample
+      description: Provide the smallest synthetic CSV example that reproduces the issue.
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+    validations:
+      required: true
